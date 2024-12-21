@@ -3,38 +3,40 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center mx-72 my-10 border p-3 rounded-xl border-slate-800">
-      <div className="">
-        <h1 className="text-zinc-200 text-base tracking-wide px-3 py-2 bg-slate-950 border rounded-lg border-slate-800 hover:bg-zinc-800 cursor-pointer">
-          @abhissh
-        </h1>
+    <div className="fixed  sm:pt-6 top-0 z-30 bg-slate-950 w-full flex justify-center items-center">
+      <div className=" flex gap-2 justify-between items-center w-[55rem] border-b sm:border p-3 sm:rounded-xl border-slate-700">
+        <div className="">
+          <h1 className="text-zinc-200 text-base tracking-wide max-w-24 px-2 py-2 bg-zinc-950 border rounded-lg border-slate-700 hover:bg-gray-800 cursor-pointer">
+            @abhissh
+          </h1>
+        </div>
+        <ul className=" flex justify-between gap-3 sm:gap-6 items-center">
+          <li className="text-slate-200 flex gap-2 items-center text-sm font-medium tracking-wide px-3 py-2 border rounded-lg border-slate-700 cursor-pointer hover:bg-gray-800">
+            <span>
+              <House size={20} />
+            </span>{" "}
+            <span className="hidden sm:block">Home</span>
+          </li>
+          <li className="text-slate-200 flex gap-2 items-center text-sm font-medium tracking-wide px-3 py-2 border rounded-lg border-slate-700 cursor-pointer hover:bg-gray-800">
+            <span>
+              <Presentation size={20} />
+            </span>{" "}
+            <span className="hidden sm:block">Projects</span>
+          </li>
+          <li className="text-slate-200 flex gap-2 items-center text-sm font-medium tracking-wide px-3 py-2 border rounded-lg border-slate-700 cursor-pointer hover:bg-gray-800">
+            <span>
+              <Briefcase size={20} />
+            </span>{" "}
+            <span className="hidden sm:block">Work</span>
+          </li>
+          <li className="text-slate-200 flex gap-2 items-center text-sm font-medium tracking-wide px-3 py-2 border rounded-lg border-slate-700 cursor-pointer hover:bg-gray-800">
+            <span>
+              <Contact size={20} />
+            </span>{" "}
+            <span className="hidden sm:block">Contact</span>
+          </li>
+        </ul>
       </div>
-      <ul className="flex justify-between gap-6 items-center">
-        <li className="flex gap-2 items-center text-sm font-medium tracking-wide px-3 py-2 border rounded-lg border-slate-800 cursor-pointer hover:bg-zinc-800">
-          <span>
-            <House size={20} />
-          </span>{" "}
-          Home
-        </li>
-        <li className="flex gap-2 items-center text-sm font-medium tracking-wide px-3 py-2 border rounded-lg border-slate-800 cursor-pointer hover:bg-zinc-800">
-          <span>
-            <Presentation size={20} />
-          </span>{" "}
-          Projects
-        </li>
-        <li className="flex gap-2 items-center text-sm font-medium tracking-wide px-3 py-2 border rounded-lg border-slate-800 cursor-pointer hover:bg-zinc-800">
-          <span>
-            <Briefcase size={20} />
-          </span>{" "}
-          Work
-        </li>
-        <li className="flex gap-2 items-center text-sm font-medium tracking-wide px-3 py-2 border rounded-lg border-slate-800 cursor-pointer hover:bg-zinc-800">
-          <span>
-            <Contact size={20} />
-          </span>{" "}
-          Contact
-        </li>
-      </ul>
     </div>
   );
 }
