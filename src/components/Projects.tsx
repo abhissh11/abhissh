@@ -51,7 +51,7 @@ export default function Projects() {
   ];
 
   return (
-    <div id="projects" className=" min-h-screen">
+    <div id="projects" className=" min-h-fit">
       <h1 className="text-2xl font-bold pb-2 ">Projects</h1>
       <div className="mt-6 flex flex-col gap-8">
         {project.map((pj) => {
