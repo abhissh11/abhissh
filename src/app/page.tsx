@@ -1,21 +1,61 @@
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-import { CircleCheckBig, Github } from "lucide-react";
+import Work from "@/components/Work";
+import { CircleCheckBig } from "lucide-react";
 import React from "react";
-
+import { Icon } from "@iconify/react";
+import Link from "next/link";
+import ContactComponent from "@/components/ContactComponent";
 export default function Page() {
+  const connects = [
+    {
+      link: "https://github.com/abhissh11",
+      name: "Github",
+      icon: "mdi:github",
+    },
+    {
+      link: "https://www.linkedin.com/in/abhishekkr-dev/",
+      name: "Linkedin",
+      icon: "mdi:linkedin",
+    },
+    {
+      link: "https://t.me/abhishek_dot",
+      name: "telegram",
+      icon: "uil:telegram",
+    },
+    { link: "https://x.com/abhissh_", name: "X", icon: "ri:twitter-x-fill" },
+  ];
   return (
-    <div className="relative mt-28 sm:mt-32 mx-8 sm:mx-12 flex flex-col md:flex-row gap-12 justify-center items-start">
+    <div
+      id="#home"
+      className="relative mt-28 sm:mt-32 mx-8 sm:mx-12 flex flex-col md:flex-row gap-12 justify-center items-start"
+    >
       {/* Fixed Section */}
-      <div className="md:max-w-80 w-full flex flex-col gap-2 p-4 border border-slate-700 rounded-xl md:sticky md:top-32">
-        <h1 className="text-xl font-bold text-gray-200">Abhishek Kumar</h1>
-        <p className="text-slate-500 text-base tracking-wide leading-6">
-          👋 Hi, I'm Abhishek, a MERN Fullstack developer hailing from Kolkata,
-          India. With a focus on user experience and performance optimization, I
-          strive to create seamless digital experiences. Let's connect and
-          create something remarkable!
-          <span className="px-4 underline text-slate-400">Github</span>
-        </p>
+      <div className="flex flex-col gap-8 md:sticky md:top-32">
+        <div className="md:max-w-80 w-full flex flex-col gap-2 p-4 border border-slate-700 rounded-xl ">
+          <h1 className="text-xl font-bold text-gray-200">Abhishek Kumar</h1>
+          <p className="text-slate-500 text-base tracking-wide leading-6">
+            👋 Hi, I'm Abhishek, a MERN Fullstack developer hailing from
+            Kolkata, India. With a focus on user experience and performance
+            optimization, I strive to create seamless digital experiences. Let's
+            connect and create something remarkable!
+            <Link href="mailto:abhishekkr.ssh@gmail.com" target="_blank">
+              <span className="px-4 underline text-slate-400">Mail Me</span>
+            </Link>
+          </p>
+        </div>
+        <div className=" hidden sm:flex justify-between gap-2 px-4 py-2 border border-slate-700 rounded-xl">
+          {connects.map((ct) => (
+            <Link href={ct.link} target="_blank">
+              <button
+                key={ct.name}
+                className="px-3 py-2 text-2xl font-bold border border-slate-800 rounded-lg hover:bg-slate-800 "
+              >
+                <Icon icon={ct.icon} />{" "}
+              </button>
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Scrolling Section */}
@@ -49,6 +89,8 @@ export default function Page() {
           </div>
           <Skills />
           <Projects />
+          <Work />
+          <ContactComponent />
         </div>
       </div>
     </div>

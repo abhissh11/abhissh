@@ -1,6 +1,5 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { IconifyIcon } from "./../../node_modules/@iconify/types/types.d";
 
 export default function Skills() {
   const skill = [
