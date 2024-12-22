@@ -23,7 +23,7 @@ export default function ContactComponent() {
     { link: "https://x.com/abhissh_", name: "X", icon: "ri:twitter-x-fill" },
   ];
   return (
-    <div id="#contact" className="my-6">
+    <div id="contact" className="my-6">
       <h1 className="text-2xl font-bold pb-2 ">Contact</h1>
       <div className="flex gap-2 flex-col my-2 border rounded-xl border-slate-700">
         <div className="flex flex-col gap-1 items-start px-4 py-4">

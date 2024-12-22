@@ -20,7 +20,7 @@ export default function Projects() {
       link: "https://PsycheMaster.vercel.app/",
       stack: ["TypeScript, NextJS, MongoDB, Tailwind CSS, jwt"],
       description:
-        "PsycheMaster is a platform for psychological counseling with a user-friendly interface.",
+        "PsycheMaster a platform i developed for a psychologist/couselor for focussing their client where they can book sessions. And the admins can manage content, forms,etc in the Dashboard.",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export default function Projects() {
       link: "https://recruitrack.vercel.app",
       stack: ["TypeScript, NextJS, MongoDB, Tailwind CSS, magicUI"],
       description:
-        "RecruiTrack helps recruiters manage applicant data efficiently.",
+        "RecruiTrack helps recruiters Effortlessly manage and filter resumes using advanced AI tools, ensuring only the most relevant applications are shortlisted for review.",
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ export default function Projects() {
       link: "https://opportunext.vercel.app",
       stack: ["JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS"],
       description:
-        "OppNex is a job and opportunity tracking platform for teams and individuals.",
+        "OppurtuNext is a Job-Portal app for developers seeking job and internship opportunities. They can find the jobs curated at one place from all over the internet, managed by Admins.",
     },
     {
       id: 5,
@@ -46,12 +46,12 @@ export default function Projects() {
         "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS, RazorPay",
       ],
       description:
-        "FundBux is a crowdfunding platform with integrated payment solutions.",
+        "FundBux is a crowdfunding platform with integrated payment solutions, connecting the needy to wide spectrum of people to contribute and raise funding for their cause.",
     },
   ];
 
   return (
-    <div id="#projects" className=" min-h-screen">
+    <div id="projects" className=" min-h-screen">
       <h1 className="text-2xl font-bold pb-2 ">Projects</h1>
       <div className="mt-6 flex flex-col gap-8">
         {project.map((pj) => {

@@ -33,7 +33,7 @@ export default function Work() {
     },
   ];
   return (
-    <div id="#work" className="my-6">
+    <div id="work" className="my-6">
       <h1 className="text-2xl font-bold pb-2 ">Work</h1>
       <div className="mt-4 flex flex-col gap-2 border border-slate-700 px-2 pt-4 rounded-xl">
         {exp.map((exp) => (

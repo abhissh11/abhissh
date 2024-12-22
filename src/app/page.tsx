@@ -27,7 +27,7 @@ export default function Page() {
   ];
   return (
     <div
-      id="#home"
+      id="home"
       className="relative mt-28 sm:mt-32 mx-8 sm:mx-12 flex flex-col md:flex-row gap-12 justify-center items-start"
     >
       {/* Fixed Section */}
