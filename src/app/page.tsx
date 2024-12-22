@@ -46,11 +46,8 @@ export default function Page() {
         </div>
         <div className=" hidden sm:flex justify-between gap-2 px-4 py-2 border border-slate-700 rounded-xl">
           {connects.map((ct) => (
-            <Link href={ct.link} target="_blank">
-              <button
-                key={ct.name}
-                className="px-3 py-2 text-2xl font-bold border border-slate-800 rounded-lg hover:bg-slate-800 "
-              >
+            <Link key={ct.name} href={ct.link} target="_blank">
+              <button className="px-3 py-2 text-2xl font-bold border border-slate-800 rounded-lg hover:bg-slate-800 ">
                 <Icon icon={ct.icon} />{" "}
               </button>
             </Link>

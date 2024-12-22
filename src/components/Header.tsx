@@ -1,6 +1,5 @@
 "use client";
 import { Briefcase, Contact, House, Presentation } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 
 export default function Header() {

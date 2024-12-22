@@ -37,7 +37,10 @@ export default function Work() {
       <h1 className="text-2xl font-bold pb-2 ">Work</h1>
       <div className="mt-4 flex flex-col gap-2 border border-slate-700 px-2 pt-4 rounded-xl">
         {exp.map((exp) => (
-          <div className="mx-4 sm:mx-6 py-2 gap-2 cursor-pointer pb-4 transition-all duration-150 border-b border-slate-700">
+          <div
+            key={exp.id}
+            className="mx-4 sm:mx-6 py-2 gap-2 cursor-pointer pb-4 transition-all duration-150 border-b border-slate-700"
+          >
             <div className="flex gap-2 justify-between items-center">
               <div className="flex gap-2 items-center">
                 <Image
