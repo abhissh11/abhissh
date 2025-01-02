@@ -20,7 +20,7 @@ export default function ContactComponent() {
       name: "telegram",
       icon: "uil:telegram",
     },
-    { link: "https://x.com/abhissh_", name: "X", icon: "ri:twitter-x-fill" },
+    { link: "https://x.com/abhissh11", name: "X", icon: "ri:twitter-x-fill" },
   ];
   return (
     <div id="contact" className="my-6">

@@ -23,7 +23,7 @@ export default function Page() {
       name: "telegram",
       icon: "uil:telegram",
     },
-    { link: "https://x.com/abhissh_", name: "X", icon: "ri:twitter-x-fill" },
+    { link: "https://x.com/abhissh11", name: "X", icon: "ri:twitter-x-fill" },
   ];
   return (
     <div
@@ -66,15 +66,17 @@ export default function Page() {
         {/* Universal Browser Scroll */}
         <div className="mt-6 flex flex-col gap-6">
           <div className="flex justify-between items-center flex-wrap gap-2">
-            <button
-              className="flex items-center max-h-11 gap-2 md:px-4 px-2 py-2 bg-gray-100
-             hover:bg-gray-300 text-slate-950 text-lg font-medium border border-slate-700 rounded-lg"
-            >
-              <span>
-                <CircleCheckBig size={20} />
-              </span>{" "}
-              Get in Touch
-            </button>
+            <Link href="#contact">
+              <button
+                className="flex items-center max-h-11 gap-2 md:px-4 px-2 py-2 bg-gray-100
+              hover:bg-gray-300 text-slate-950 text-lg font-medium border border-slate-700 rounded-lg"
+              >
+                <span>
+                  <CircleCheckBig size={20} />
+                </span>{" "}
+                Get in Touch
+              </button>
+            </Link>
             <div className="flex flex-col gap-1 items-center">
               <h1 className="text-lg font-normal">1+ year</h1>
               <p className="text-sm text-slate-600">Experience</p>
